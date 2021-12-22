@@ -13,7 +13,6 @@
 	
 	if($DecodedData['costomer_email']!="")
 	{
-	
 	$result= $mysqli->query("SELECT * FROM users where costomer_email='$costomer_email'");
 		if($result->num_rows>0) {
 			echo json_encode('email already exist');  // alert msg in react native 		
