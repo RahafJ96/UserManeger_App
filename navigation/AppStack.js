@@ -112,7 +112,6 @@ const AppStack = () => {
                 component={FeedStack}
                 options={({ route }) => ({
                     tabBarLabel: 'Home',
-                    // tabBarVisible: route.state && route.state.index === 0,
                     tabBarIcon: ({ color, size }) => (
                         <MaterialCommunityIcons
                             name="home-outline"
@@ -127,10 +126,6 @@ const AppStack = () => {
                 component={MessageStack}
                 options={({ route }) => ({
                     tabBarVisible: getTabBarVisibility(route),
-                    // Or Hide tabbar when push!
-                    // https://github.com/react-navigation/react-navigation/issues/7677
-                    // tabBarVisible: route.state && route.state.index === 0,
-                    // tabBarLabel: 'Home',
                     tabBarIcon: ({ color, size }) => (
                         <Ionicons
                             name="chatbox-ellipses-outline"
