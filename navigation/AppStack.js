@@ -16,7 +16,7 @@ const Tab = createBottomTabNavigator();
 const FeedStack = ({ navigation }) => (
     <Stack.Navigator>
         <Stack.Screen
-            name="RN Social"
+            name="letsShop"
             component={HomeScreen}
             options={{
                 headerTitleAlign: 'center',
